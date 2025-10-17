@@ -240,12 +240,26 @@ void task12()
     std::cout << "Twoja kwota w euro: " << exchange << "\n";
 }
 
+void task60()
+{
+    int number;
+
+    std::cout << "Podaj liczbe:\n";
+    std::cin >> number;
+
+    if (number > 0)
+        std::cout << "Podana liczba jest dodatnia\n";
+
+    if (number < 0)
+        std::cout << "Podana liczba jest ujemna\n";
+}
+
+
 int main()
 {
     setlocale(LC_CTYPE, "polish");
-    task10();
+    task60();
 }
-
 
 /*
 
