@@ -32,16 +32,34 @@ void task2()
     if (reminderOfDivision != 0)
         std::cout << "Podana liczba jest nieparzysta\n";
 
-    //-------------------------------------------------------------------------------------
+    //------------------------------------------------------------------------------------
     if (reminderOfDivision != 0)
         std::cout << "Podana liczba jest parzysta\n";
     else
         std::cout << "Podana liczba jest nieparzysta\n";
 }
 
+void task3()
+{
+    int number;
+    std::cout << "Podaj liczbę całkowitą:\n";
+    std::cin >> number;
+
+    if (number >= 1)
+    {
+        if (number < 10)
+            std::cout << "Liczba jest w zakresie <1;10)\n";
+        else
+            std::cout << "Liczba nie jest w zakresie <1;10)\n";
+    }
+    else
+    {
+        std::cout << "Liczba nie jest w zakresie <1;10)\n";
+    }
+}
 int main()
 {
     setlocale(LC_CTYPE, "polish");
 
-    task2();
+    task3 ();
 }
